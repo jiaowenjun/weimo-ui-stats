@@ -17,14 +17,13 @@ export const statsCatalog = {
           registryName: 'heat-color',
           packageExport: './components/heat-color',
         },
+        {
+          id: 'stat-group',
+          name: 'StatGroup',
+          registryName: 'stat-group',
+          packageExport: './components/stat-group',
+        },
       ],
-    },
-    {
-      id: 'stat-group',
-      name: '统计组',
-      exportName: 'StatGroup',
-      registryName: 'stat-group',
-      packageExport: './components/stat-group',
     },
   ],
 } as const satisfies PackageCatalog
