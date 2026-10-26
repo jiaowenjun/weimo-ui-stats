@@ -1,0 +1,41 @@
+.stat-page__card {
+  min-width: 0;
+}
+
+.stat-page__heatmap-preview {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.stat-page__heat-color-preview {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.stat-page__stat-group-preview {
+  width: 100%;
+  min-width: 0;
+  padding: 16px;
+}
+
+/* 组件卡片标题里的组件类名:等宽小字,弱化为标题的补充说明 */
+.docs-component-class {
+  margin-left: 6px;
+  color: var(--color-text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+}
+
+/* 详情页 stage 框架下的组件摘要 */
+.component-detail-page__summary {
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-sm);
+}
