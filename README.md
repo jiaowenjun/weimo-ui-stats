@@ -1,6 +1,6 @@
 # weimo-ui-stats
 
-> 一张 13 周的日期活动热力图,一组紧凑的统计指标。
+> 你的坚持,一格一格看得见 —— 13 周活动热力图 + 大数字统计。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![React 19](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev)
