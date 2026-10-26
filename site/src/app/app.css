@@ -2,6 +2,12 @@
   min-width: 0;
 }
 
+/* 相邻演示卡之间的间距:在模板 __hero 的 gap(窄屏 12px/宽屏 15px)之上再加 9px,
+ * 只作用于卡片之间,不改变 hero 标题区到首卡的节奏 */
+.stat-page__card + .stat-page__card {
+  margin-block-start: 9px;
+}
+
 .stat-page__heatmap-preview {
   display: flex;
   width: 100%;
