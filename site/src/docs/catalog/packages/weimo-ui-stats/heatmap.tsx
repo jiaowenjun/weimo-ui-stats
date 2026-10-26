@@ -34,7 +34,8 @@ const demoDailyCounts: HeatmapDailyCount[] = [
 ]
 
 function HeatmapDemo() {
-  const [activeDate, setActiveDate] = useState(dateOffset(-2))
+  // 初始无选中单元格,空串即 Heatmap 的「无 active」约定
+  const [activeDate, setActiveDate] = useState('')
 
   return (
     <ComponentPreviewCard
