@@ -11,14 +11,6 @@
   overflow-x: auto;
 }
 
-.stat-page__heat-color-preview {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-
 .stat-page__stat-group-preview {
   width: 100%;
   min-width: 0;

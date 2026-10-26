@@ -2,12 +2,6 @@ import { useState } from 'react'
 
 import { ComponentPreviewCard } from 'weimo-ui-core/components/component-preview-card'
 import {
-  HeatColor,
-  getHeatColorToken,
-  heatColorLevels,
-  heatColorMap,
-} from 'weimo-ui-stats/components/heat-color'
-import {
   Heatmap,
   formatHeatmapDateKey,
   type HeatmapDailyCount,
@@ -58,43 +52,10 @@ function HeatmapDemo() {
   )
 }
 
-function HeatColorDemo() {
-  return (
-    <ComponentPreviewCard
-      className="stat-page__card"
-      items={heatColorLevels.map((level) => {
-        const item = heatColorMap[level]
-
-        return {
-          darkValue: item.value.dark,
-          token: getHeatColorToken(level),
-          value: item.value.light,
-        }
-      })}
-      label={
-        <ComponentCardTitle componentName="heat-color">热力色阶</ComponentCardTitle>
-      }
-    >
-      <div className="stat-page__heat-color-preview">
-        <HeatColor />
-      </div>
-    </ComponentPreviewCard>
-  )
-}
-
-function HeatmapPageDemo() {
-  return (
-    <>
-      <HeatmapDemo />
-      <HeatColorDemo />
-    </>
-  )
-}
-
 export const heatmapDefinition = {
   id: 'heatmap',
-  summary: '按周排列的 13 周日期活动热力图,附带热力色阶',
+  summary: '按周排列的 13 周日期活动热力图',
   status: 'Ready',
   frame: 'plain',
-  preview: () => <HeatmapPageDemo />,
+  preview: () => <HeatmapDemo />,
 } satisfies ComponentDefinition
