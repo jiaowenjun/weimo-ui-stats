@@ -38,7 +38,7 @@ export function DocsShell() {
       pageTitle={selected?.name}
       showThemeToggle={false}
       siteName="weimo-ui-stats"
-      subheadline="一张 13 周的日期活动热力图，一组紧凑的统计指标"
+      subheadline="一组紧凑的统计指标，一张 13 周的日期活动热力图"
       topBarActions={
         <FrostedIconButton
           aria-label="GitHub 仓库"

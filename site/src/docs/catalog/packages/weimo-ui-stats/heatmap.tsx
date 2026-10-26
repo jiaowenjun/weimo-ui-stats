@@ -8,7 +8,6 @@ import {
 } from 'weimo-ui-stats/components/heatmap'
 import { StatGroup } from 'weimo-ui-stats/components/stat-group'
 import type { ComponentDefinition } from '../../component-docs'
-import { ComponentCardTitle } from '../../component-card-title'
 
 function dateOffset(days: number) {
   const date = new Date()
@@ -40,7 +39,7 @@ function HeatmapDemo() {
   return (
     <ComponentPreviewCard
       className="stat-page__card"
-      label={<ComponentCardTitle componentName="heatmap">热力图</ComponentCardTitle>}
+      label="热力图"
     >
       <div className="stat-page__heatmap-preview">
         <Heatmap
@@ -75,9 +74,7 @@ function StatGroupDemo() {
   return (
     <ComponentPreviewCard
       className="stat-page__card"
-      label={
-        <ComponentCardTitle componentName="stat-group">统计组</ComponentCardTitle>
-      }
+      label="统计组"
     >
       <div className="stat-page__stat-group-preview">
         <StatGroup aria-label="笔记统计" items={sidebarStatsItems} />
@@ -89,8 +86,8 @@ function StatGroupDemo() {
 function HeatmapPageDemo() {
   return (
     <>
-      <HeatmapDemo />
       <StatGroupDemo />
+      <HeatmapDemo />
     </>
   )
 }
