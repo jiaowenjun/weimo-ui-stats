@@ -1,6 +1,6 @@
 # weimo-ui-stats
 
-> 你的坚持,看得见 —— 数字统计、活动热力图,为笔记与打卡而生。
+> 你的坚持,看得见 —— 为笔记与打卡而生。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![React 19](https://img.shields.io/badge/React-19-61dafb.svg)](https://react.dev)
