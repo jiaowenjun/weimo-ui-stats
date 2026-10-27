@@ -34,11 +34,11 @@ export function DocsShell() {
 
   return (
     <MiniSiteTemplate
-      headline="你的坚持，一格一格看得见"
+      headline="你的坚持，看得见"
       pageTitle={selected?.name}
       showThemeToggle={false}
       siteName="weimo-ui-stats"
-      subheadline="13 周活动热力图 + 大数字统计，为笔记与打卡应用而生"
+      subheadline="数字统计、活动热力图，为笔记与打卡而生"
       topBarActions={
         <FrostedIconButton
           aria-label="GitHub 仓库"
