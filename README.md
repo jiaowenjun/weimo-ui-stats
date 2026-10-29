@@ -31,14 +31,13 @@
 pnpm add weimo-ui-stats weimo-ui-core @base-ui/react react react-dom
 ```
 
-- `weimo-ui-stats@0.1.x` 搭配 `weimo-ui-core@0.1.x` 使用;`Heatmap` 的悬浮提示来自 core 的 Tooltip,因此需要 core 的对等依赖 `@base-ui/react`。
+- `weimo-ui-stats@0.1.x` 搭配 `weimo-ui-core@0.2.x` 使用;`Heatmap` 的悬浮提示来自 core 的 Tooltip,因此需要 core 的对等依赖 `@base-ui/react`。
 - 包根不提供 `.` 导出,所有组件通过显式子路径引入。
 
-在应用入口加载一次主题 token(组件自身的结构样式与热力色 token 会随导入自动加载,无需手动引入):
-
-```ts
-import 'weimo-ui-core/styles/tokens.css'
-```
+样式零配置:引入任意组件子路径,组件 JS 会一并加载自身结构样式、热力色 token 与
+`weimo-ui-core/styles/tokens.css` 主题 token(含 `.dark` 暗色覆盖),无需在应用入口
+手动引入任何 CSS。显式引入 core tokens.css 仍然无害,定义幂等;定制主题在自有 CSS
+中覆盖对应变量即可。
 
 ## 🚀 快速上手
 

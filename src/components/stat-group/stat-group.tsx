@@ -2,6 +2,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 
 import { cn } from 'weimo-ui-core/lib/utils'
 
+import 'weimo-ui-core/styles/tokens.css'
 import './stat-group.css'
 
 export type StatGroupItem = {

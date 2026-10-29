@@ -17,6 +17,7 @@ import {
   type HeatmapDailyCount,
 } from './heatmap-model'
 
+import 'weimo-ui-core/styles/tokens.css'
 import './heatmap.css'
 
 export type { HeatmapCell, HeatmapDailyCount } from './heatmap-model'
